@@ -2,7 +2,7 @@ import { helloPlugin } from './helloPlugin'
 
 const serverlessConfiguration = {
   frameworkVersion: '3',
-  service: 'thing',
+  service: 'hello-world',
   plugins: [
     'serverless-esbuild',
     'serverless-offline',
