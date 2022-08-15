@@ -16,12 +16,12 @@ const serverlessConfiguration = {
       platform: 'node',
       target: 'node16',
       bundle: true,
-      outfile: '.esbuild/.build/out.js',
+      outdir: '.esbuild/.build',
       plugins: [helloPlugin],
     },
     'serverless-offline': {
-      host: "",
-      httpPort: "",
+      host: "localhost",
+      httpPort: 3005
     },
   },
   provider: {
@@ -31,7 +31,13 @@ const serverlessConfiguration = {
   },
   functions: {
     'hello-world': {
-      handler: 'app.ts',
+      handler: 'app.api',
+      events: [{
+        http: {
+          path: 'hello',
+          method: 'get',
+        },
+      }],
     }
   }
 }
