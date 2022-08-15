@@ -6,7 +6,7 @@ const options = {
   platform: 'node',
   target: 'node16',
   bundle: true,
-  outfile: '.esbuild/.build/out.js',
+  outfile: '.esbuild/.build/app.js',
   plugins: [helloPlugin],
 } as BuildOptions
 
