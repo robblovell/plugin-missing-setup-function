@@ -2,6 +2,49 @@
 
 This repo describes a problem with the serverless esbuild plugin. See: [Serverless EsBuild Issue #359](https://github.com/floydspace/serverless-esbuild/issues/359)
 
+## Running
+
+### Javascript version
+```bash
+npm i
+npm start
+
+> plugin-missing-setup-function@0.0.1 start
+> cd javascript && serverless offline start --verbose
+
+Compiling to node16 bundle with esbuild...
+Compiling with concurrency: Infinity
+✘ [ERROR] [plugin env] Plugin is missing a setup function
+...
+```
+Running with esbuild directly:
+
+```bash
+npm run esbuild
+```
+
+### Typescript version
+```bash
+npm i
+npm start-ts
+
+> plugin-missing-setup-function@0.0.1 start-ts
+> cd typescript && serverless offline start --verbose
+
+Compiling to node16 bundle with esbuild...
+Compiling with concurrency: Infinity
+✘ [ERROR] [plugin env] Plugin is missing a setup function
+...
+```
+
+Running with esbuild directly:
+
+```bash
+npm run esbuild-ts
+```
+
+## The Bug Report
+
 **Describe the bug**
 
 When attempting to use any esbuild plugin, the following error occurs:
