@@ -64,9 +64,9 @@ When attempting to use any esbuild plugin, the following error occurs:
 
 **To Reproduce**
 
-This error occurs with any plugin. 
+This error occurs with any plugin.
 
- Example:
+Example:
 
 app.ts
 ```
@@ -214,21 +214,21 @@ Error: Build failed with 1 error:
 Expect serverless to build and run using esbuild with plugins and not crash.
 
 **Versions (please complete the following information):**
- - OS: Mac
- - Serverless Framework Version: 
+- OS: Mac
+- Serverless Framework Version:
  ```
     Framework Core: 3.21.0 (local) 3.21.0 (global)
     Plugin: 6.2.2
     SDK: 4.3.2
 ```
- - Plugin Version: [e.g. 1.25.0]
+- Plugin Version: [e.g. 1.25.0]
 ```
 "serverless-esbuild": "^1.32.5",
 ```
 **Additional context**
 
-It looks like any function passed into the esbuild config fails. 
+It looks like any function passed into the esbuild config fails.
 
-For instance, if you pass a function to the watch option, it is removed. 
+For instance, if you pass a function to the watch option, it is removed.
 
 Is there some sort of marshalling/un-marshalling happening where functions are inadvertently deleted?
