@@ -4,9 +4,12 @@ This repo describes a problem with the serverless esbuild plugin. See: [Serverle
 
 ## Running
 
-### Javascript version
+### Prep
 ```bash
 npm i
+````
+### Javascript version
+```bash
 npm start
 
 > plugin-missing-setup-function@0.0.1 start
@@ -31,8 +34,7 @@ Build complete
 
 ### Typescript version
 ```bash
-npm i
-npm start-ts
+npm run start-ts
 
 > plugin-missing-setup-function@0.0.1 start-ts
 > cd typescript && serverless offline start --verbose
