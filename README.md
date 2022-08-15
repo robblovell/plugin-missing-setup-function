@@ -21,6 +21,12 @@ Running with esbuild directly:
 
 ```bash
 npm run esbuild
+
+> plugin-missing-setup-function@0.0.1 esbuild
+> cd javascript && node esbuild.config.js
+
+Hello World
+Build complete
 ```
 
 ### Typescript version
@@ -41,6 +47,12 @@ Running with esbuild directly:
 
 ```bash
 npm run esbuild-ts
+
+> plugin-missing-setup-function@0.0.1 esbuild-ts
+> cd typescript && ts-node esbuild.config.ts
+
+Hello World
+Build complete
 ```
 
 ## The Bug Report
