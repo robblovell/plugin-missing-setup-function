@@ -6,10 +6,14 @@ const options = {
   platform: 'node',
   target: 'node16',
   bundle: true,
-  outfile: '.esbuild/.build/app.js',
+  outdir: '.esbuild/.build',
   plugins: [helloPlugin],
 } as BuildOptions
 
-build(options).then(() => {
-  console.log('Build complete')
-})
+build(options)
+  .then(result => {
+    console.log('Esbuild result:', result);
+  })
+  .catch(error => {
+    console.log('Esbuild error:', error);
+  })

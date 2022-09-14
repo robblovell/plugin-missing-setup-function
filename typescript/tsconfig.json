@@ -13,7 +13,7 @@
     "rootDir": ".",
     "sourceMap": true,
     "target": "es2019",
-    "types": ["node", "jest"],
+    "types": ["node"],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
@@ -28,6 +28,6 @@
     "noPropertyAccessFromIndexSignature": false,
     "noImplicitOverride": false
   },
-  "include": ["app.ts", "helloPlugin.ts"],
+  "include": ["app.ts", "helloPlugin.ts", "serverless.ts"],
   "exclude": ["node_modules"]
 }

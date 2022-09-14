@@ -16,7 +16,6 @@ const serverlessConfiguration = {
       platform: 'node',
       target: 'node16',
       bundle: true,
-      outdir: '.esbuild/.build',
       plugins: [helloPlugin],
     },
     'serverless-offline': {
