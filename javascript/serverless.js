@@ -7,9 +7,6 @@ const serverlessConfiguration = {
     'serverless-esbuild',
     'serverless-offline',
   ],
-  package: {
-    individually: true,
-  },
   custom: {
     esbuild: {
       entryPoints: ['app.js'],
@@ -27,7 +24,6 @@ const serverlessConfiguration = {
   provider: {
     name: 'aws',
     runtime: 'nodejs16.x',
-    stage: 'staging',
   },
   functions: {
     'hello-world': {
@@ -42,4 +38,3 @@ const serverlessConfiguration = {
   }
 }
 module.exports = serverlessConfiguration
-// module.exports = serverlessConfiguration
