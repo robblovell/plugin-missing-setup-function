@@ -1,6 +1,6 @@
 # plugin-missing-setup-function
 
-This repo describes a problem with the serverless esbuild plugin. See: [Serverless EsBuild Issue #359](https://github.com/floydspace/serverless-esbuild/issues/359)
+This repo describes a problem with plugins with plugins that have functions in configuration in serverless framework plugins.
 
 ## Issue Reports
 See:
